@@ -3,38 +3,24 @@
 <head>
   <meta charset="utf-8">
 
-<title>Home</title>
+<title>Result</title>
   
 </head>
 
 <body>
 <div>
 
-  <a class="navbar-brand" href="#"><b>IMDB Sentiment Analysis</b></a>
+  <h2>IMDB Sentiment Analysis</h2>
  
-<br>
-</div>
 
-<body>
-
-
-		
-	</div>
-
-<body>
-
-<h2><center>ML App</center></h2>
-
-
-</div>
 	
-	<p style="color:white;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<h3>Results for Comment</h3><
 	<div class="results" "w3-container w3-card " style= "border-radius:58px;background-color:white;padding:40px;width: auto;" id="ip4">
         	
 	{% if prediction == 1%}
-	<h2 style="color:blue;">Positive  Review (Movie is good) </h2>
+	<h3 style="color:blue;">Positive  Review (Movie is good) </h3>
 	{% elif prediction == 0%}
-	<h2 style="color:red;">Negative Review (Movie is bad)</h2>
+	<h3 style="color:red;">Negative Review (Movie is bad)</h3>
 	{% endif %}
 
         </div>
