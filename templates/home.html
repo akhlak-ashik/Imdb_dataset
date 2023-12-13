@@ -1,9 +1,8 @@
 <html >
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
 <head>
   <meta charset="utf-8">
 
- 
 <title>Home</title>
   
 </head>
@@ -12,28 +11,18 @@
 
 <div>
 
-  <a class="navbar-brand" href="#"><b>IMDB Sentiment Analysis</b></a>
+  <h2>IMDB Sentiment Analysis</h2>
  
-</nav>
 <br>
-</div>
 
-<body>
-
-
-<br>
-		
-	</div>
-	
-
-	<div class="ml-container">
+	<div>
 
 		<form action="{{ url_for('predict')}}" method="POST">
 		<p>Enter Your review Here</p>
 	
 		<textarea name="Reviews" rows="6" cols="50" required="required" id="ip4"></textarea>
 		<br/>
-<br><br>
+		<br><br>
 		<input type="submit" class="btn-primary  value="predict">
 		
 	</form>
