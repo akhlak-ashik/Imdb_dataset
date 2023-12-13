@@ -17,15 +17,14 @@
 	<h3>Results for Comment</h3>
 		<div class="results" "w3-container w3-card " style= "border-radius:58px;background-color:white;padding:40px;width: auto;" id="ip4">
 	        	
-		{% if prediction == 1%}
+		{% if prediction >= 0.5 %}
 		<h3 style="color:blue;">Positive  Review (Movie is good) </h3>
-		{% elif prediction == 0%}
+		{% elif prediction < 0.5 %}
 		<h3 style="color:red;">Negative Review (Movie is bad)</h3>
 		{% endif %}
 
 	    </div>
 
-	    <b> Confidence: {% prediction %} %</b>
 	</div>
 
 </body>
